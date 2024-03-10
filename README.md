@@ -4,8 +4,14 @@ Thank you for taking our course. Completing the following tasks will prepare you
 
 ### Task 1: Setting up your repository.
 - Configure GitHub for ssh access. You need to generate a key pair and add the public key to your GitHub account.
-  - To generate your key follow the steps in: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-  - How to add a key is described here: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+  - To generate your key follow the steps [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). For Ubuntu the necessary steps are:
+    1. Open a terminal by pressing `Ctrl+Alt+T`.
+    2. Execute
+      ```bash
+      ssh-keygen -t ed25519 -C "your_email@example.com"
+      ```
+    3. Press Enter twice and remember where you saved the key (this should be prompted/configured in the step above).
+  - How to add a SSH key to GitHub is described here: [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 - Hit the green `Code`-button in the upper right corner of this repository. Select the `SSH` tab and copy the link leading to your repository. This is necessary to clone your github repository onto your local machine.
 - Open a terminal by pressing `Ctrl+Alt+T`.
 - Clone this repository by running 
@@ -27,8 +33,8 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
 
 
 ### Task 3: Setting up Vscode for python development
-- Open Visual Studio Code.
-- Click on the extensions tab in vscode (on the left hand side) or press `Ctrl+Shift+X`. Install the `Python` and `Remote-SSH` extensions. Choose the versions provided by Microsoft.
+- Open Visual Studio Code (Vscode).
+- Click on the extensions tab in Vscode (on the left hand side) or press `Ctrl+Shift+X`. Install the `Python` and `Remote-SSH` extensions. Choose the versions provided by Microsoft.
 - Make the Miniconda interpreter your default in Vscode by pressing `Ctrl+Shift+P`. Type `select interpreter` and press enter. In the following dialogue, choose the `base` environment. 
 
 ### Task 4: Installing dependencies
