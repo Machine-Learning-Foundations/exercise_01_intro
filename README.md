@@ -1,5 +1,5 @@
 ## Introductory Exercises
-Thank you for taking our course. Completing the following tasks will prepare you for the exercise sessions in the coming weeks. Machine learning on larger scales often requires using central compute clusters, which run on Linux. Consequently, we will use workstations running Ubuntu Linux. We highly recommend to use Linux systems instead of Windows.
+Thank you for taking our course. Completing the following tasks will prepare you for the exercise sessions in the coming weeks. Machine learning on larger scales often requires using central compute clusters, which run on Linux. Consequently, we will use workstations running Ubuntu (a Linux distribution). We highly recommend to use Linux systems instead of Windows.
 
 
 ### Task 1: Setting up your repository.
@@ -29,13 +29,14 @@ To develop and execute our python code, we use a python container software calle
 The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` file.
 
 - Open the terminal on your machine by pressing `Ctrl+Alt+T`. Navigate into the Downloads folder by typing `cd Downloads`. Before running the installer, set the executable bit by typing `chmod +x Miniconda3-latest-Linux-x86_64.sh`. Install Miniconda via `./Miniconda3-latest-Linux-x86_64.sh`.
-- Close your terminal and open it again. Check if you can see the `(base)` environment name on the left hand side of your command line. This means that (mini)conda is installed correctly
+- Finally execute this command `source ~/.bashrc`. Check if you can see the `(base)` environment name on the left hand side of your command line. This means that (mini)conda is installed correctly.
 
 
 ### Task 3: Setting up Vscode for python development
 - Open Visual Studio Code (Vscode).
 - Click on the extensions tab in Vscode (on the left hand side) or press `Ctrl+Shift+X`. Install the `Python` and `Remote-SSH` extensions. Choose the versions provided by Microsoft.
 - Make the Miniconda interpreter your default in Vscode by pressing `Ctrl+Shift+P`. Type `select interpreter` and press enter. In the following dialogue, choose the `base` environment. 
+- (Optional) For the course, we suggest to install `TODO Highlight` extension provided by Wayou Liu. This is handy in identifying TODO parts of exercise much easier.
 
 ### Task 4: Installing dependencies
 - Open a terminal by pressing `Ctrl+Alt+T`. Navigate into this directory by typing `cd day_01_exercise_intro-yourname`. Type
@@ -104,7 +105,7 @@ At the end of the day after you finished all your tasks we want to save the resu
   ```
 - Now commit the staged files with
   ```bash
-  git commit -m "Final commit"
+  git commit -m "put_your_commit_message_here"
   ```
   and use your own commit message to describe the commit.
 - Finally, push everything to github with
