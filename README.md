@@ -51,7 +51,7 @@ Scientific software must provide reproducible results, and automatic testing ens
 
 ![dont_be_vincent](./images/vincent.png)
 
-To prevent similar issues, we strongly recommend testing your code. Let's learn a lesson from the humorous Vincent, " former CrowdStrike employee", in the image above! We suggest using [Nox](https://nox.thea.codes/en/stable/) for test automation.
+To prevent similar issues, we strongly recommend testing your code. Let's learn a lesson from the humorous Vincent, " former CrowdStrike employee ", in the image above! We suggest using [Nox](https://nox.thea.codes/en/stable/) for test automation.
 
 - To run some of the tests we prepared for you type
     ```bash
