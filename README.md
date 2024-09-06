@@ -46,7 +46,7 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
   ```
   to install the python packages required for this exercise.
 
-### Task 5: Don't be Vincent - Test your code.
+### Task 5: Test your code.
 Scientific software must provide reproducible results, and Automatic testing ensures that our software runs reliably. For example, the recent [CrowdStrike incident](https://en.wikipedia.org/wiki/2024_CrowdStrike_incident), which won the 2024 '[Most Epic Fail](https://uk.pcmag.com/security/153845/crowdstrike-exec-shows-up-to-accept-most-epic-fail-award-in-person)' award highlights the importance of thorough testing. 
 
 ![dont_be_vincent](./images/vincent.png)
