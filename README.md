@@ -25,14 +25,14 @@ In Vscode, you can now open a rendered version of this readme. Right-click the f
 
 ### Task 2: Downloading and installing Miniconda.
 To develop and execute our python code, we use a python container software called miniconda. Using miniconda you can create an `environment` which holds python and all the required software to run the given scripts.
-- Navigate to https://docs.conda.io/en/latest/miniconda.html in your favorite browser.
+- Navigate to https://docs.conda.io/en/latest/miniconda.html in your favourite browser.
 The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` file.
 
 - Open the terminal on your machine by pressing `Ctrl+Alt+T`. Navigate into the Downloads folder by typing `cd Downloads`. Before running the installer, set the executable bit by typing `chmod +x Miniconda3-latest-Linux-x86_64.sh`. Install Miniconda via `./Miniconda3-latest-Linux-x86_64.sh`.
-- Finally execute this command `source ~/.bashrc`. Check if you can see the `(base)` environment name on the left hand side of your command line. This means that (mini)conda is installed correctly.
+- Finally, execute this command `source ~/.bashrc`. Check if you can see the `(base)` environment name on the left-hand side of your command line. This means that (mini)conda is installed correctly.
 
 
-### Task 3: Setting up Vscode for python development
+### Task 3: Setting up Vscode for Python development
 - Open Visual Studio Code (Vscode).
 - Click on the extensions tab in Vscode (on the left hand side) or press `Ctrl+Shift+X`. Install the `Python` and `Remote-SSH` extensions. Choose the versions provided by Microsoft.
 - Make the Miniconda interpreter your default in Vscode by pressing `Ctrl+Shift+P`. Type `select interpreter` and press enter. In the following dialogue, choose the `base` environment. 
@@ -44,16 +44,16 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
   ```bash
   pip install -r requirements.txt
   ```
-  to install the python packages required for this exercise.
+  to install the Python packages required for this exercise.
 
 ### Task 5: Test your code.
-Scientific software must provide reproducible results, and Automatic testing ensures that our software runs reliably. For example, the recent [CrowdStrike incident](https://en.wikipedia.org/wiki/2024_CrowdStrike_incident), which won the 2024 '[Most Epic Fail](https://uk.pcmag.com/security/153845/crowdstrike-exec-shows-up-to-accept-most-epic-fail-award-in-person)' award highlights the importance of thorough testing. 
+Scientific software must provide reproducible results, and automatic testing ensures that our software runs reliably. For example, the recent [CrowdStrike incident](https://en.wikipedia.org/wiki/2024_CrowdStrike_incident), which won the 2024 '[Most Epic Fail](https://uk.pcmag.com/security/153845/crowdstrike-exec-shows-up-to-accept-most-epic-fail-award-in-person)' award highlights the importance of thorough testing. 
 
 ![dont_be_vincent](./images/vincent.png)
 
 To prevent similar issues, we strongly recommend testing your code. Let's learn a lesson from the humorous Vincent in the image above! We suggest using [Nox](https://nox.thea.codes/en/stable/) for test automation.
 
-- To run some of the tests we prepared for you type,
+- To run some of the tests we prepared for you type
     ```bash
     nox -s test
     ```
@@ -61,7 +61,7 @@ To prevent similar issues, we strongly recommend testing your code. Let's learn 
   Click the `Configure Python Tests` button and select `pytest` in the ensuing prompt. In the next step, Vscode wants to know the location of the test folder. Choose `tests`. 
   Vscode will now display your tests on the sidebar on the left. Click the play symbol next to the tests folder to run all tests.
 
-### Task 6: Implement and test a python class.
+### Task 6: Implement and test a Python class.
 - Open `src/my_code.py` and finish the `__init__` function of the `Complex` class. The idea here is to implement support for complex numbers (see: https://en.wikipedia.org/wiki/Complex_number for more information about complex numbers). Double-check your code by running `nox -s test`. 
 
 ### Task 7: Breakpoints
@@ -76,7 +76,7 @@ To prevent similar issues, we strongly recommend testing your code. Let's learn 
 
 
 ### Task 10: Getting nox to help you format your code.
-- Professionally written python code respects coding conventions. Type `nox -s format` to have `nox` format your code for you.
+- Professionally written Python code respects coding conventions. Type `nox -s format` to have `nox` format your code for you.
 
 ### Optional Task 11: Linting
 - `nox` can do even more for you! A basic syntax error at the wrong place can cost days of computation time. Type
@@ -92,7 +92,7 @@ To prevent similar issues, we strongly recommend testing your code. Let's learn 
   ```
 
 ### Final Task 13: Finishing up the task
-At the end of the day after you finished all your tasks we want to save the results and upload them to your online github repository. Ideally, all the tests were successful. Follow these steps:
+At the end of the day after you finished all your tasks we want to save the results and upload them to your online GitHub repository. Ideally, all the tests were successful. Follow these steps:
 - Open a terminal by pressing `Ctrl+Alt+T`. Navigate into this directory using the `cd` command.
 - Use
   ```bash
@@ -113,7 +113,7 @@ At the end of the day after you finished all your tasks we want to save the resu
   git commit -m "put_your_commit_message_here"
   ```
   and use your own commit message to describe the commit.
-- Finally, push everything to github with
+- Finally, push everything to GitHub with
   ```bash
   git push
   ```
