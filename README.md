@@ -46,8 +46,9 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
   ```
   to install the python packages required for this exercise.
 
-### Task 5: Run an automatic test.
-Scientific software must provide reproducible results. Automatic testing ensures our software runs reliably. We recommend Nox for test automation https://nox.thea.codes/en/stable/. 
+### Task 5: Don't be Vincent - Test your code.
+![dont_be_vincent](./images/vincent.png)
+Scientific software must provide reproducible results. Automatic testing ensures our software runs reliably, please don't be vincent. We recommend Nox for test automation https://nox.thea.codes/en/stable/. 
 - To run some of the tests we prepared for you type,
     ```bash
     nox -s test
