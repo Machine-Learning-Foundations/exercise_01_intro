@@ -1,4 +1,5 @@
 """This module ships code to implement some complex-valued math in python."""
+
 from __future__ import annotations
 
 from math import atan2, cos, sin, sqrt
@@ -8,23 +9,22 @@ def my_function() -> bool:
     """Return True immediately to demonstrate a working test.
 
     Returns:
-        bool: Hardcoded to True.
+        : Hardcoded to True.
     """
-
     return True
 
 
-class Complex(object):
+class Complex:
     """Implement a complex number class with addition and multiplication."""
 
     def __init__(self, realpart: float, imagpart: float):
         """Create a complex number object.
 
         Args:
-            realpart (float): The real part of the number.
-            imagpart (float): The complex part of the number.
+            realpart: The real part of the number.
+            imagpart: The complex part of the number.
         """
-        # TODO: Implement me.
+        raise NotImplementedError  # TODO implement
 
     def add(self, other: Complex) -> Complex:
         """Add to complex numbers.
@@ -33,24 +33,22 @@ class Complex(object):
         compute (x_1 + iy_1) + (x_2 + iy_2) = x_1 + x_2 + i(y_1 + y_2).
 
         Args:
-            other (Complex): The number to add to self.
+            other: The number to add to self.
 
         Returns:
-            Complex: A complex number object containig the sum of the two.
+            : A complex number object containing the sum of the two.
         """
-        # TODO: Implement me.
-        return None
+        raise NotImplementedError  # TODO implement
 
     def radius(self) -> float:
-        """Compute the radius of the compelex number.
+        """Compute the radius of the complex number.
 
         According to Pythagoras, the radius is given by sqrt(x^2 + y^2)
 
         Returns:
-            float: The radius of self.
+            : The radius of the complex number.
         """
-        # TODO: Implement me.
-        return None
+        raise NotImplementedError  # TODO implement
 
     def angle(self) -> float:
         """Compute the angle of the complex number.
@@ -59,28 +57,29 @@ class Complex(object):
         the angle is typically given by atan2(y, x)
 
         Returns:
-            float: The angle of self.
+            : The angle of self.
         """
-        # TODO: Implement me.
-        return None
+        raise NotImplementedError  # TODO implement
 
     def multiply(self, other: Complex) -> Complex:
         """Multiply two complex numbers (x_1 + jy_1) * (x_2 + jy_2).
 
         Complex numbers are often multiplied in polar form via
-        c_mul = r_1 * r_2 * e^(theta_1 + theta_2).
-        In other words the new radius is the product of the incoming radii.
+
+            c_mul = r_1 * r_2 * e^(theta_1 + theta_2).
+
+        In other words, the new radius is the product of the incoming radii.
         The new angle is given by the sum of the incoming angles.
-        Radius and angle can be converted back to the karthesian form via,
-        x = r_mul * cos(theta_mul),
-        y = r_mul * sin(theta_mul).
+
+        The radius and angle can be converted back to the Cartesian form via:
+
+            x = r_mul * cos(theta_mul),
+            y = r_mul * sin(theta_mul).
 
         Args:
-            other (Complex): The number to multiply self by.
+            other: The number to multiply self by.
 
         Returns:
-            Complex: The product of self and other.
+            : The product of self and other.
         """
-        # TODO: Implement me.
-        return None
-
+        raise NotImplementedError  # TODO implement

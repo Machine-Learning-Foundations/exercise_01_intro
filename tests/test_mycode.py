@@ -4,8 +4,7 @@ import sys
 
 import numpy as np
 
-sys.path.insert(0, "./src/")
-from src.my_code import Complex, my_function
+from fml_exercise_01_intro.my_code import Complex, my_function
 
 
 def test_function() -> None:

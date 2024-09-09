@@ -1,18 +1,19 @@
-"""Use the selfmade complex class to plot the Jullia fractal."""
+"""Use the self-made complex class to plot the Julia fractal."""
 
 from math import log10
 
 import matplotlib.pyplot as plt
 
-from my_code import Complex
+from fml_exercise_01_intro.my_code import Complex
 
-if __name__ == "__main__":
 
-    def julia(z: Complex, c: Complex) -> Complex:
-        """Evaluate a julia step."""
-        square = z.multiply(z)
-        return square.add(c)
+def julia(z: Complex, c: Complex) -> Complex:
+    """Evaluate a julia step."""
+    square = z.multiply(z)
+    return square.add(c)
 
+
+def main():
     c = Complex(-0.07, 0.652)
 
     mesh = []
@@ -34,3 +35,7 @@ if __name__ == "__main__":
 
     # TODO: use plt.imshow and plt.plot to explore the scaled values.
     # TODO: combine plt.imshow and plt.colorbar.
+
+
+if __name__ == "__main__":
+    main()

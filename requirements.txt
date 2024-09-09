@@ -1,4 +1,0 @@
-nox
-pytest
-numpy
-matplotlib

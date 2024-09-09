@@ -1,30 +1,20 @@
 """This module implements our CI function calls."""
+
 import nox
 
 
-@nox.session(name="test")
-def run_test(session):
-    """Run pytest."""
-    session.install("-r", "requirements.txt")
-    session.install("pytest")
-    session.run("pytest")
+@nox.session(name="format")
+def format(session):
+    """Fix common convention problems automatically."""
+    session.install("ruff")
+    session.run("ruff", "format")
 
 
 @nox.session(name="lint")
 def lint(session):
     """Check code conventions."""
-    session.install("flake8")
-    session.install(
-        "flake8-black",
-        "flake8-docstrings",
-        "flake8-bugbear",
-        "flake8-broken-line",
-        "pep8-naming",
-        "pydocstyle",
-        "darglint",
-    )
-    session.run("flake8", "src", "tests", "noxfile.py")
-
+    session.install("ruff")
+    session.run("ruff", "check")
 
 
 @nox.session(name="typing")
@@ -45,10 +35,9 @@ def mypy(session):
     )
 
 
-@nox.session(name="format")
-def format(session):
-    """Fix common convention problems automatically."""
-    session.install("black")
-    session.install("isort")
-    session.run("isort", "src", "tests", "noxfile.py")
-    session.run("black", "src", "tests", "noxfile.py")
+@nox.session(name="test")
+def run_test(session):
+    """Run pytest."""
+    session.install(".[tests]")
+    session.install("pytest")
+    session.run("pytest")

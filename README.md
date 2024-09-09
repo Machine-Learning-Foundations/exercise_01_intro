@@ -42,9 +42,9 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
 - Open a terminal by pressing `Ctrl+Alt+T`. Navigate into this directory by typing `cd exercise_intro-yourname`. Type
 
   ```bash
-  pip install -r requirements.txt
+  pip install nox
   ```
-  to install the Python packages required for this exercise.
+  to install the Nox harness, which allows us to reproducibly run tests
 
 ### Task 5: Test your code.
 Scientific software must provide reproducible results, and automatic testing ensures that our software runs reliably. For example, the recent [CrowdStrike incident](https://en.wikipedia.org/wiki/2024_CrowdStrike_incident), which won the 2024 '[Most Epic Fail](https://uk.pcmag.com/security/153845/crowdstrike-exec-shows-up-to-accept-most-epic-fail-award-in-person)' award highlights the importance of thorough testing. 

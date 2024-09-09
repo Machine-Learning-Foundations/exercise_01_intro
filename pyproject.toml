@@ -1,0 +1,37 @@
+# See https://setuptools.readthedocs.io/en/latest/build_meta.html
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fml_exercise_01_intro"
+version = "0.0.1-dev"
+readme = "README.md"
+
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+# this implicitly sets `packages = ":find"`
+where = ["src"]  # list of folders that contain the packages (["."] by default)
+
+# See https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+# Pytest, see https://docs.pytest.org/en/stable/reference/customize.html#pyproject-toml
+[tool.pytest.ini_options]
+markers = [
+    "slow: this test is slow and should only run locally."
+]
