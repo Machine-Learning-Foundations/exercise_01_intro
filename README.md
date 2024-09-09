@@ -19,7 +19,7 @@ Thank you for taking our course. Completing the following tasks will prepare you
   git clone <ssh-link>
   ```
   in the terminal and substitute the `<ssh-link>` with the link you just copied. After pressing `Enter` your repository will be downloaded into your current working directory.
-- Navigate into the downloaded directory by typing `cd day_01_exercise_intro-yourname`. Use `ls` to list the contents of the folder you are currently working in. If Visual Studio Code is installed correctly you can open it from the terminal by typing `code .`.
+- Navigate into the downloaded directory by typing `cd exercise_intro-yourname`. Use `ls` to list the contents of the folder you are currently working in. If Visual Studio Code is installed correctly you can open it from the terminal by typing `code .`.
 
 In Vscode, you can now open a rendered version of this readme. Right-click the file and select `Open Preview`.
 
