@@ -13,7 +13,7 @@ def julia(z: Complex, c: Complex) -> Complex:
     return square.add(c)
 
 
-def main():
+def main() -> None:
     c = Complex(-0.07, 0.652)
 
     mesh = []

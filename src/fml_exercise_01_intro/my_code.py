@@ -17,12 +17,12 @@ def my_function() -> bool:
 class Complex:
     """Implement a complex number class with addition and multiplication."""
 
-    def __init__(self, realpart: float, imagpart: float):
+    def __init__(self, real_part: float, imaginary_part: float) -> None:
         """Create a complex number object.
 
         Args:
-            realpart: The real part of the number.
-            imagpart: The complex part of the number.
+            real_part: The real part of the number.
+            imaginary_part: The complex part of the number.
         """
         raise NotImplementedError  # TODO implement
 

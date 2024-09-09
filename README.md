@@ -62,7 +62,7 @@ To prevent similar issues, we strongly recommend testing your code. Let's learn 
   Vscode will now display your tests on the sidebar on the left. Click the play symbol next to the tests folder to run all tests.
 
 ### Task 6: Implement and test a Python class.
-- Open `src/my_code.py` and finish the `__init__` function of the `Complex` class. The idea here is to implement support for complex numbers (see: https://en.wikipedia.org/wiki/Complex_number for more information about complex numbers). Double-check your code by running `nox -s test`. 
+- Open `src/fml_exercise_01_intro/my_code.py` and finish the `__init__` function of the `Complex` class. The idea here is to implement support for complex numbers (see: https://en.wikipedia.org/wiki/Complex_number for more information about complex numbers). Double-check your code by running `nox -s test`. 
 
 ### Task 7: Breakpoints
 - Click on a line number in `my_code.py`. A red dot appears. Press the `debug_test` button in the `Testing` tab, Python will pause, and you can use the build-in `Debug console` to explore the data at this point.
@@ -71,8 +71,8 @@ To prevent similar issues, we strongly recommend testing your code. Let's learn 
 - Implement and test the `add`, `radius`, `angle`, and `multiply` functions.
 
 ### Task 9: Plotting
-- Run `python ./src/julia.py` to compute a plot of the Julia set with your `Complex` class (see: https://en.wikipedia.org/wiki/Julia_set for more information).
-- In `src/julia.py` use `plt.plot` and `plt.imshow` to visualize the julia-set. Feel free to play with `c` to create different sets.
+- Run `python -m fml_exercise_01_intro.julia` to compute a plot of the Julia set with your `Complex` class (see: https://en.wikipedia.org/wiki/Julia_set for more information).
+- In `src/fml_exercise_01_intro/julia.py` use `plt.plot` and `plt.imshow` to visualize the julia-set. Feel free to play with `c` to create different sets.
 
 
 ### Task 10: Getting nox to help you format your code.
