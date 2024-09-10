@@ -69,8 +69,8 @@ class Complex(object):
 
         Complex numbers are often multiplied in polar form via
         c_mul = r_1 * r_2 * e^(theta_1 + theta_2).
-        In other words the new radius is the product of the incoming radii.
-        The new angle is given by the sum of the incoming angles.
+        That means that the new radius r_mul is the product of the incoming radii 
+        and the new angle theta_mul is given by the sum of the incoming angles.
         Radius and angle can be converted back to the karthesian form via,
         x = r_mul * cos(theta_mul),
         y = r_mul * sin(theta_mul).
