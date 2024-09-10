@@ -39,7 +39,7 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
 - (Optional) For the course, we suggest to install `TODO Highlight` extension provided by Wayou Liu. This is handy in identifying TODO parts of exercise much easier.
 
 ### Task 4: Installing dependencies
-- Open a terminal by pressing `Ctrl+Alt+T`. Navigate into this directory by typing `cd exercise_intro-yourname`. Type
+- Open a terminal by pressing `Ctrl+Alt+T`. Navigate into this directory by typing `cd exercise-01-intro-yourgitname`. Type
 
   ```bash
   pip install -r requirements.txt
