@@ -10,7 +10,6 @@ def my_function() -> bool:
     Returns:
         bool: Hardcoded to True.
     """
-
     return True
 
 
@@ -27,10 +26,12 @@ class Complex(object):
         # TODO: Implement me.
 
     def add(self, other: Complex) -> Complex:
-        """Add to complex numbers.
+        """Add to complex number.
 
         For two complex numbers x_1 + iy_1, x_2 + iy_2,
         compute (x_1 + iy_1) + (x_2 + iy_2) = x_1 + x_2 + i(y_1 + y_2).
+        So the sum of two complex numbers is again a complex number, whose real part is the sum of the real parts
+        and the imaginary part is the sum of the imaginary parts of the two complex numbers.
 
         Args:
             other (Complex): The number to add to self.

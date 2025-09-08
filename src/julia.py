@@ -13,6 +13,7 @@ if __name__ == "__main__":
         square = z.multiply(z)
         return square.add(c)
 
+    # the initial complex number - feel free to play with it!
     c = Complex(-0.07, 0.652)
 
     mesh = []
@@ -33,4 +34,3 @@ if __name__ == "__main__":
     scaled = [[log10(val + 1e-12) for val in row] for row in mesh]
 
     # TODO: use plt.imshow and plt.show to explore the scaled values.
-    # TODO: combine plt.imshow and plt.colorbar.
