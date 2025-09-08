@@ -19,7 +19,7 @@ Thank you for taking our course. Completing the following tasks will prepare you
   git clone <ssh-link>
   ```
   in the terminal and substitute the `<ssh-link>` with the link you just copied. After pressing `Enter` your repository will be downloaded into your current working directory.
-- Navigate into the downloaded directory by typing `cd exercise-01-intro-yourname`. Use `ls` to list the contents of the folder you are currently working in. If Visual Studio Code is installed correctly you can open it from the terminal by typing `code .`.
+- Navigate into the downloaded directory by typing `cd exercise-01-intro-yourgitname`. Use `ls` to list the contents of the folder you are currently working in. If Visual Studio Code is installed correctly you can open it from the terminal by typing `code .`.
 
 In Vscode, you can now open a rendered version of this readme. Right-click the file and select `Open Preview`.
 
@@ -34,7 +34,7 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
 
 ### Task 3: Setting up Vscode for Python development
 - Open Visual Studio Code (Vscode).
-- Click on the extensions tab in Vscode (on the left hand side) or press `Ctrl+Shift+X`. Install the `Python` and `Remote-SSH` extensions. Choose the versions provided by Microsoft.
+- Click on the extensions tab in Vscode (on the left hand side) ![extensions_tab.png](./images/extensions_tab.png) or press `Ctrl+Shift+X`. Install the `Python` and `Remote-SSH` extensions. Choose the versions provided by Microsoft.
 - Make the Miniconda interpreter your default in Vscode by pressing `Ctrl+Shift+P`. Type `select interpreter` and press enter. In the following dialogue, choose the `base` environment. 
 - (Optional) For the course, we suggest to install `TODO Highlight` extension provided by Wayou Liu. This is handy in identifying TODO parts of exercise much easier.
 
@@ -57,7 +57,7 @@ To prevent similar issues, we strongly recommend testing your code. Let's learn 
     ```bash
     nox -s test
     ```
-  The python extension provides test integration into Vscode. To use it, click on the lab-flask icon on the left sidebar. When opening it for the first time, it asks you for a configuration.
+  The python extension provides test integration into Vscode. To use it, click on the lab-flask icon on the left sidebar ![labflask.png](./images/labflask.png). When opening it for the first time, it asks you for a configuration.
   Click the `Configure Python Tests` button and select `pytest` in the ensuing prompt. In the next step, Vscode wants to know the location of the test folder. Choose `tests`. 
   Vscode will now display your tests on the sidebar on the left. Click the play symbol next to the tests folder to run all tests.
 
