@@ -2,7 +2,7 @@
 Thank you for taking our course. Completing the following tasks will prepare you for the exercise sessions in the coming weeks. Machine learning on larger scales often requires using central compute clusters, which run on Linux. Consequently, we will use workstations running Ubuntu (a Linux distribution). We highly recommend to use Linux systems instead of Windows.
 
 
-### Task 1: Setting up your repository.
+### ⊙ Task 1: Setting up your repository.
 - Configure GitHub for ssh access. You need to generate a key pair and add the public key to your GitHub account.
   - To generate your key follow the steps [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). For Ubuntu the necessary steps are:
     1. Open a terminal by pressing `Ctrl+Alt+T`.
@@ -23,7 +23,7 @@ Thank you for taking our course. Completing the following tasks will prepare you
 
 In Vscode, you can now open a rendered version of this readme. Right-click the file and select `Open Preview`.
 
-### Task 2: Downloading and installing Miniconda.
+### ⊙ Task 2: Downloading and installing Miniconda.
 To develop and execute our python code, we use a python container software called miniconda. Using miniconda you can create an `environment` which holds python and all the required software to run the given scripts.
 - Navigate to https://docs.conda.io/en/latest/miniconda.html in your favourite browser.
 The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` file.
@@ -32,13 +32,13 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
 - Finally, execute this command `source ~/.bashrc`. Check if you can see the `(base)` environment name on the left-hand side of your command line. This means that (mini)conda is installed correctly.
 
 
-### Task 3: Setting up Vscode for Python development
+### ⊙ Task 3: Setting up Vscode for Python development
 - Open Visual Studio Code (Vscode).
 - Click on the extensions tab in Vscode (on the left hand side) ![extensions_tab.png](./images/extensions_tab.png) or press `Ctrl+Shift+X`. Install the `Python` and `Remote-SSH` extensions. Choose the versions provided by Microsoft.
 - Make the Miniconda interpreter your default in Vscode by pressing `Ctrl+Shift+P`. Type `select interpreter` and press enter. In the following dialogue, choose the `base` environment. 
 - (Optional) For the course, we suggest to install `TODO Highlight` extension provided by Wayou Liu. This is handy in identifying TODO parts of exercise much easier.
 
-### Task 4: Installing dependencies
+### ⊙ Task 4: Installing dependencies
 - Open a terminal by pressing `Ctrl+Alt+T`. Navigate into this directory by typing `cd exercise-01-intro-yourgitname`. Type
 
   ```bash
@@ -46,7 +46,7 @@ The HRZ-Pool computers run Ubuntu Linux. Download the `Miniconda3 Linux 64-bit` 
   ```
   to install the Python packages required for this exercise.
 
-### Task 5: Test your code.
+### ⊙ Task 5: Test your code.
 Scientific software must provide reproducible results, and automatic testing ensures that our software runs reliably. For example, the recent [CrowdStrike incident](https://en.wikipedia.org/wiki/2024_CrowdStrike_incident), which won the 2024 '[Most Epic Fail](https://uk.pcmag.com/security/153845/crowdstrike-exec-shows-up-to-accept-most-epic-fail-award-in-person)' award highlights the importance of thorough testing. 
 
 ![dont_be_vincent](./images/vincent.png)
@@ -61,37 +61,50 @@ To prevent similar issues, we strongly recommend testing your code. Let's learn 
   Click the `Configure Python Tests` button and select `pytest` in the ensuing prompt. In the next step, Vscode wants to know the location of the test folder. Choose `tests`. 
   Vscode will now display your tests on the sidebar on the left. Click the play symbol next to the tests folder to run all tests.
 
-### Task 6: Implement and test a Python class.
-- Open `src/my_code.py` and finish the `__init__` function of the `Complex` class. The idea here is to implement support for complex numbers (see: https://en.wikipedia.org/wiki/Complex_number for more information about complex numbers). Double-check your code by running `nox -s test`. 
+### ⊙ Task 6: Implement and test a Python class.
+- Open `src/my_code.py` and finish the `__init__` function of the `Complex` class. The idea here is to implement support for complex numbers (see: https://en.wikipedia.org/wiki/Complex_number for more information about complex numbers). Double-check your code by running `nox -s test`.
 
-### Task 7: Breakpoints
+- In Python, the `__init__` function is a method that is automatically called when you create an object from a class. It sets up the initial values of the specific object. In this exercise, for instance, the `__init__` method will take on two values: The real part `x` ("realpart") and the imaginary part `y` ("imagpart"), since this is all you need to define any imaginary number `z`: $$z = x + i \cdot y$$
+- The `self` parameter is a way for a class to refer to the specific object that is being used. So whenever you use  `self.nameOfVariable` you are saying _This is the nameOfVariable of __this__ object_.
+- After completing the `__init__` function, you can now create a new complex number via:
+ ```bash
+x = 5 # some number representing the real part
+y = -6 # another number representing the imaginary part
+z = Complex(x, y)
+```
+
+### ⊙ Task 7: Breakpoints
 - Click on a line number in `my_code.py`. A red dot appears. Press the `debug_test` button in the `Testing` tab, Python will pause, and you can use the build-in `Debug console` to explore the data at this point.
 
-### Task 8: Implement the remaining functions in my_code.py
+### ⊙ Task 8: Implement the remaining functions in my_code.py
 - Implement and test the `add`, `radius`, `angle`, and `multiply` functions.
+- The formulas that you need are provided in the docstring (the comment that starts and ends with `"""` at the beginning of each method)
 
-### Task 9: Plotting
+> **Remark**: Don't worry, this course is not about complex numbers! This task is just intended as a means to get used to the environment and coding in Python. 
+
+### ⊙ Task 9: Plotting
 - Run `python ./src/julia.py` to compute a plot of the Julia set with your `Complex` class (see: https://en.wikipedia.org/wiki/Julia_set for more information).
+- The Julia set is a fractal pattern formed by repeatedly applying a mathematical rule to complex numbers, like $z = z^2 + c$, where `c` is an initial, fixed complex number.
 - In `src/julia.py` use `plt.plot` and `plt.imshow` to visualize the julia-set. Feel free to play with `c` to create different sets.
 
 
-### Task 10: Getting nox to help you format your code.
+### ⊙ Task 10: Getting nox to help you format your code.
 - Professionally written Python code respects coding conventions. Type `nox -s format` to have `nox` format your code for you.
 
-### Optional Task 11: Linting
+### ✪ Optional Task 11: Linting
 - `nox` can do even more for you! A basic syntax error at the wrong place can cost days of computation time. Type
   ```bash
   nox -s lint
   ```
   to check your code for formatting issues and syntax errors.
 
-### Optional Task 12: Typing
+### ✪ Optional Task 12: Typing
 - Take a look at https://docs.python.org/3/library/typing.html . `nox` can help you by checking your code for type problems and incorrect function signatures.
   ```bash
   nox -s typing
   ```
 
-### Final Task 13: Finishing up the task
+### ⊙ Final Task 13: Finishing up the task
 At the end of the day after you finished all your tasks we want to save the results and upload them to your online GitHub repository. Ideally, all the tests were successful. Follow these steps:
 - Open a terminal by pressing `Ctrl+Alt+T`. Navigate into this directory using the `cd` command.
 - Use
